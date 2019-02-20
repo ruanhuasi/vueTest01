@@ -18,4 +18,4 @@
  + 先把 扩展图标的 css 样式，拷贝到 项目中
  + 拷贝 扩展字体库 ttf 文件，到项目中
  + 为 购物车 小图标 ，添加 如下样式 `mui-icon mui-icon-extra mui-icon-extra-cart`
-3. 要在 中间区域放置一个 router-view 来展示路由匹配到的组件
+3. 要在 中间区域放置一个 router-view 来展示路由匹配到的组件.
