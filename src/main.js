@@ -27,7 +27,7 @@ import { Header, Swipe, SwipeItem } from 'mint-ui'
 Vue.component(Header.name, Header)
 Vue.component(Swipe.name, Swipe)
 Vue.component(SwipeItem.name, SwipeItem)
-
+ 
 var vm = new Vue({
     el:'#app',
     render:c=>c(app),
