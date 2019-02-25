@@ -1,0 +1,34 @@
+{
+    "thumimages": [
+    {
+        "id": 1,
+        "src":"xq_slt/jjsh/1.jpg",
+        "msrc":"xq_slt/jjsh/1m.jpg"
+    },
+    {
+        "id": 1,
+        "src":"xq_slt/gdmv/1.jpg",
+        "msrc":"xq_slt/gdmv/1m.jpg"
+    },
+    {
+        "id": 1,
+        "src":"xq_slt/kjsj/1.jpg",
+        "msrc":"xq_slt/kjsj/1m.jpg"
+    },
+    {
+        "id": 1,
+        "src":"xq_slt/mxmn/1.jpg",
+        "msrc":"xq_slt/mxmn/1m.jpg"
+    },
+    {
+        "id": 1,
+        "src":"xq_slt/qctm/1.jpg",
+        "msrc":"xq_slt/qctm/1m.jpg"
+    },
+    {
+        "id": 1,
+        "src":"xq_slt/sysj/1.jpg",
+        "msrc":"xq_slt/sysj/1m.jpg"
+    }
+    ]
+}
