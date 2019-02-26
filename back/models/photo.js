@@ -9,7 +9,26 @@ exports.getlunbo = function( callback ) {
         if ( err ) {
             return callback( err )
         }
-        callback( null, JSON.parse( data ).lunbotus )
+		var lunbos = JSON.parse( data ).lunbos
+		return callback( null, lunbos )
+    } )
+}
+
+// 商品轮播图
+exports.getgoodslunbo = function( id,callback ) {
+    fs.readFile( path.join(__dirname,'./../db/goodsLunbotu.json'), 'utf8', function( err, data ) {
+        if ( err ) {
+            return callback( err )
+        }
+		id = parseInt( id )
+		var goodsLunbotus = JSON.parse( data ).goodsLunbotus
+		var ret = []
+		goodsLunbotus.forEach(element => {
+			if(id === element.id){
+				ret.push(element)
+			}
+		})
+		return callback( null, ret )
     } )
 }
 /*

@@ -1,0 +1,21 @@
+{
+    "shopcarlist": [
+    {
+        "id": 80,
+        "title":"三星 Galaxy S9 4GB+128GB 勃艮第红",
+        "img_url":"http://127.0.0.1:8000/phone/5.jpg",
+        "sell_price":4769
+    },
+    {
+        "id": 81,
+        "title":"荣耀10青春版 幻彩渐变 2400万AI自拍",
+        "img_url":"http://127.0.0.1:8000/phone/1.jpg",
+        "sell_price":1399
+    },
+    {
+        "id": 82,
+        "title":"Apple iPhone X (A1865) 64GB",
+        "img_url":"http://127.0.0.1:8000/phone/4.jpg",
+        "sell_price":6299
+    }]
+}

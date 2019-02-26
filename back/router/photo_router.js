@@ -30,6 +30,21 @@ photoRouter.get('/api/getlunbo', function(req, res ,next) {
 	})
 })
 
+// 商品轮播图
+photoRouter.get('/api/getgoodslunbo/:imgid', function(req, res ,next) {
+    Photo.getgoodslunbo(parseInt(req.params.imgid),function(err,lunbotus) {
+		if(err){
+			return next(err)
+        }
+        var result = {
+            "status": 0
+        }
+        
+        result.message = lunbotus
+		return res.send(result)
+	})
+})
+
 //图片分类数据
 photoRouter.get('/api/getimgcategory', function(req, res ,next) {
     Photo.getimgcategory(function(err,imgcategorys) {

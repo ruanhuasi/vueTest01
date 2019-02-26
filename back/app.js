@@ -2,6 +2,8 @@ var express = require('express')
 var path = require('path')
 var photoRouter = require('./router/photo_router')
 var newsRouter = require('./router/news_router')
+var commentRouter = require('./router/comment_router')
+var goodsRouter = require('./router/goods_router')
 var bodyParser = require('body-parser')
 var cors = require('cors')
 
@@ -15,6 +17,7 @@ app.use(bodyParser.json())
 // 开放静态资源
 //app.use(express.static(path.join(__dirname, './db_img/')))
 app.use(express.static('./db_img/'))
+//app.use(express.static('./db/'))
 
 app.use(cors()) // 解决跨域
 
@@ -34,7 +37,8 @@ app.use(cors()) // 解决跨域
 //把路由挂载到 app 中
 app.use(photoRouter)
 app.use(newsRouter)
-
+app.use(commentRouter)
+app.use(goodsRouter)
 
 // 配置一个处理 404 的中间件
 // 当前面所有的中间件没有能匹配的，就会在这里处理
